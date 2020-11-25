@@ -7,7 +7,8 @@ const percent = document.querySelector('.percent');
 const description = document.querySelector('.description');
 
 const URL = './model/';
-let model, webcam, labelContainer, maxPredictions;
+
+let model, webcam, maxPredictions;
 
 icon.addEventListener('click', async () => {
   on.classList.toggle('invisible');
@@ -29,7 +30,7 @@ async function init() {
   maxPredictions = model.getTotalClasses();
 
   const flip = true;
-  webcam = new tmImage.Webcam(480, 480, flip);
+  webcam = new tmImage.Webcam(380, 380, flip);
   await webcam.setup();
 
   camera.appendChild(webcam.canvas);
@@ -50,17 +51,15 @@ async function predict() {
     const className = prediction[i].className;
     const probability = prediction[i].probability.toFixed(2) * 100;
 
+    const data = {
+      Me: 'Me',
+      None: 'None',
+    };
+
     if (probability >= 75) {
       if (name.innerHTML !== className) {
         name.innerHTML = className;
-
-        if (className === 'Me') {
-          description.innerHTML = '나 자신';
-        }
-
-        if (className === 'None') {
-          description.innerHTML = '아무도 없음';
-        }
+        description.innerHTML = data[className];
       }
 
       if (percent.innerHTML !== probability + '%') {
