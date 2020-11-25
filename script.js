@@ -55,11 +55,11 @@ async function predict() {
         name.innerHTML = className;
 
         if (className === 'Me') {
-          description.innerHTML = 'Me에 대한 설명을 적어볼까요?';
+          description.innerHTML = '나 자신';
         }
 
         if (className === 'None') {
-          description.innerHTML = 'None에 대한 설명을 적어볼까요?';
+          description.innerHTML = '아무도 없음';
         }
       }
 
