@@ -9,7 +9,7 @@ body {
   padding: 10px;
   position: relative;
   font-family: "Noto Sans KR", sans-serif;
-  box-shadow: 0px 2px 2px rgb(255, 251, 0);
+  box-shadow: 0px 2px 2px rgb(0, 0, 0);
   border-radius: 10px;
   background-color: #273c64;
 }
@@ -36,7 +36,7 @@ body {
 .camera {
   width: 380px;
   height: 380px;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.801);
+  box-shadow: 0px 2px 2px rgba(89, 158, 132, 0.801);
   background-color: #000000;
 }
 
