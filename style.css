@@ -17,7 +17,7 @@ body {
   top: 30px;
   right: 36px;
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(132, 235, 72, 0.2);
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -28,7 +28,7 @@ body {
 
 .icon i {
   font-size: 24px;
-  color: #ffffff;
+  color: #edfd5e;
 }
 
 .camera {
