@@ -57,8 +57,3 @@ body {
 .icon .invisible {
   display: none;
 }
-.back {
-  width: 600px;
-  height: 600px;
-  background-color: rgba(238, 226, 57, 0.2);
-}
