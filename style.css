@@ -36,6 +36,7 @@ body {
   width: 380px;
   height: 380px;
   box-shadow: 0px 2px 2px rgba(231, 245, 40, 0.801);
+  background-color: #f1e122;
 }
 
 .name {
