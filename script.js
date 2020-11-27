@@ -52,7 +52,7 @@ async function predict() {
     const probability = prediction[i].probability.toFixed(2) * 100;
 
     const data = {
-      me: '나의 모습',
+      me: '사람',
       none: '아무것도 없음',
     };
 
